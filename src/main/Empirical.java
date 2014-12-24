@@ -25,7 +25,7 @@ public class Empirical
             FIFTY_THOUSAND(50000, 4), HUNDRED_THOUSAND(100000, 5), FIVE_HUNDRED_THOUSAND(500000, 6),
             ONE_MILLION(1000000, 7),  FIVE_MILLION(5000000, 8), TEN_MILLION(10000000, 9),
             HUNDRED_MILLION(100000000, 10),
-            SIZES(11, 11), ALGORITHMS(4, 4);
+            SIZES(8, 8), ALGORITHMS(4, 4);
         private int value;
         private int sizeNumber;
         private SIZE(int _value, int _sizeNumber)
@@ -102,9 +102,12 @@ public class Empirical
         intArrays.add(new int[SIZE.HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.FIVE_HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.ONE_MILLION.value]);
+
+        /*
+        intArrays.add(new int[SIZE.FIVE_MILLION.value]);
         intArrays.add(new int[SIZE.TEN_MILLION.value]);
         intArrays.add(new int[SIZE.HUNDRED_MILLION.value]);
-
+*/
         for(int[] array : intArrays)
         {
             for(int i = 0; i < array.length; i++)
@@ -133,9 +136,11 @@ public class Empirical
         intArrays.add(new int[SIZE.HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.FIVE_HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.ONE_MILLION.value]);
+        /*
+        intArrays.add(new int[SIZE.FIVE_MILLION.value]);
         intArrays.add(new int[SIZE.TEN_MILLION.value]);
         intArrays.add(new int[SIZE.HUNDRED_MILLION.value]);
-
+        **/
         for(int[] array : intArrays)
         {
             for(int i = 0; i < array.length; i++)
@@ -165,9 +170,11 @@ public class Empirical
         intArrays.add(new int[SIZE.HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.FIVE_HUNDRED_THOUSAND.value]);
         intArrays.add(new int[SIZE.ONE_MILLION.value]);
+        /*
+        intArrays.add(new int[SIZE.FIVE_MILLION.value]);
         intArrays.add(new int[SIZE.TEN_MILLION.value]);
         intArrays.add(new int[SIZE.HUNDRED_MILLION.value]);
-
+        * */
         for(int[] array : intArrays)
         {
             for(int i = 0; i < array.length; i++)
@@ -195,19 +202,21 @@ public class Empirical
         {
             if(i == -1)
             {
-                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", order, SIZE.ONE_THOUSAND.value,
+                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", order, SIZE.ONE_THOUSAND.value,
                         SIZE.FIVE_THOUSAND.value, SIZE.TEN_THOUSAND.value, SIZE.TWENTY_THOUSAND.value,
                         SIZE.FIFTY_THOUSAND.value, SIZE.HUNDRED_THOUSAND.value, SIZE.FIFTY_THOUSAND.value,
-                        SIZE.HUNDRED_THOUSAND.value, SIZE.ONE_MILLION.value, SIZE.TEN_MILLION.value, SIZE.HUNDRED_MILLION.value);
+                        SIZE.HUNDRED_THOUSAND.value, SIZE.ONE_MILLION.value/*, SIZE.TEN_MILLION.value,
+                         * SIZE.HUNDRED_MILLION.value*/);
                 System.out.println();
             }
             else
             {
-                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", ALGORITHMS[i], times[SIZE.ONE_THOUSAND.sizeNumber][i],
+                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", ALGORITHMS[i], times[SIZE.ONE_THOUSAND.sizeNumber][i],
                         times[SIZE.FIVE_THOUSAND.sizeNumber][i], times[SIZE.TEN_THOUSAND.sizeNumber][i],
                         times[SIZE.TWENTY_THOUSAND.sizeNumber][i], times[SIZE.FIFTY_THOUSAND.sizeNumber][i],
                         times[SIZE.HUNDRED_THOUSAND.sizeNumber][i], times[SIZE.FIVE_HUNDRED_THOUSAND.sizeNumber][i],
-                        times[SIZE.ONE_MILLION.sizeNumber][i], times[SIZE.TEN_MILLION.sizeNumber][i], times[SIZE.HUNDRED_MILLION.sizeNumber][i]);
+                        times[SIZE.ONE_MILLION.sizeNumber][i]
+                        /*, times[SIZE.TEN_MILLION.sizeNumber][i], times[SIZE.HUNDRED_MILLION.sizeNumber][i]*/);
                 System.out.println();
             }
         }
