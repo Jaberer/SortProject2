@@ -1,0 +1,19 @@
+run:
+     Increasing	 1000	 5000	10000	20000	50000
+  selectionSort	    4	   23	   37	  141	  886
+  insertionSort	    0	    0	    0	    0	    1
+      mergeSort	    1	    8	   14	    2	    5
+    Arrays.sort	    0	    0	    0	    1	    2
+
+     Decreasing	 1000	 5000	10000	20000	50000
+  selectionSort	    1	   18	   64	  258	 1601
+  insertionSort	   11	   20	   31	  125	  782
+      mergeSort	    0	    0	    1	    1	    4
+    Arrays.sort	    0	    0	    0	    1	    2
+
+         Random	 1000	 5000	10000	20000	50000
+  selectionSort	    1	   10	   36	  142	  885
+  insertionSort	    0	    4	   16	   63	  391
+      mergeSort	    0	    0	    1	    2	    7
+    Arrays.sort	    0	    2	    5	   11	   13
+BUILD SUCCESSFUL (total time: 5 seconds)
