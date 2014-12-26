@@ -202,16 +202,16 @@ public class Empirical
         {
             if(i == -1)
             {
-                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", order, SIZE.ONE_THOUSAND.value,
-                        SIZE.FIVE_THOUSAND.value, SIZE.TEN_THOUSAND.value, SIZE.TWENTY_THOUSAND.value,
-                        SIZE.FIFTY_THOUSAND.value, SIZE.HUNDRED_THOUSAND.value, SIZE.FIFTY_THOUSAND.value,
-                        SIZE.HUNDRED_THOUSAND.value, SIZE.ONE_MILLION.value/*, SIZE.TEN_MILLION.value,
+                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", order, SIZE.ONE_THOUSAND.value,
+                        SIZE.FIVE_THOUSAND.value, SIZE.TEN_THOUSAND.value,
+                        SIZE.TWENTY_THOUSAND.value,SIZE.FIFTY_THOUSAND.value,
+                        SIZE.HUNDRED_THOUSAND.value, SIZE.FIVE_HUNDRED_THOUSAND.value, SIZE.ONE_MILLION.value/*, SIZE.TEN_MILLION.value,
                          * SIZE.HUNDRED_MILLION.value*/);
                 System.out.println();
             }
             else
             {
-                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", ALGORITHMS[i], times[SIZE.ONE_THOUSAND.sizeNumber][i],
+                System.out.printf("%15s\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d\t%5d", ALGORITHMS[i], times[SIZE.ONE_THOUSAND.sizeNumber][i],
                         times[SIZE.FIVE_THOUSAND.sizeNumber][i], times[SIZE.TEN_THOUSAND.sizeNumber][i],
                         times[SIZE.TWENTY_THOUSAND.sizeNumber][i], times[SIZE.FIFTY_THOUSAND.sizeNumber][i],
                         times[SIZE.HUNDRED_THOUSAND.sizeNumber][i], times[SIZE.FIVE_HUNDRED_THOUSAND.sizeNumber][i],
